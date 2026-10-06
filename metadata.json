@@ -1,0 +1,6 @@
+{
+  "name": "ZoomOut PPT",
+  "description": "점진적 줌아웃(Zoom-out) 방식의 16:9 PPT 프레젠테이션 생성기",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
