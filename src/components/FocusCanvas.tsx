@@ -116,30 +116,30 @@ export const FocusCanvas: React.FC<FocusCanvasProps> = ({
 
         {/* Quick presets */}
         <div className="flex items-center gap-1.5 bg-neutral-950/70 p-1 rounded-lg border border-neutral-800">
-          <span className="text-neutral-500 text-[11px] px-2 font-mono">빠른 위치:</span>
+          <span className="text-neutral-500 text-[11px] px-2 font-mono">추천 포커스:</span>
           <button
-            onClick={() => setQuickFocus(0.5, 0.5)}
-            className="px-2.5 py-1 text-[11px] font-medium rounded text-neutral-300 hover:text-white hover:bg-neutral-800 transition-colors"
+            onClick={() => setQuickFocus(0.5, 0.28)}
+            className="px-2.5 py-1 text-[11px] font-medium rounded text-indigo-300 hover:text-white hover:bg-neutral-800 transition-colors"
           >
-            중앙 (50%)
+            타워 트리 (상단)
           </button>
           <button
-            onClick={() => setQuickFocus(0.3, 0.35)}
+            onClick={() => setQuickFocus(0.5, 0.48)}
             className="px-2.5 py-1 text-[11px] font-medium rounded text-neutral-300 hover:text-white hover:bg-neutral-800 transition-colors"
           >
-            좌상단 (30%)
+            중앙 분수대
           </button>
           <button
-            onClick={() => setQuickFocus(0.7, 0.35)}
+            onClick={() => setQuickFocus(0.5, 0.60)}
             className="px-2.5 py-1 text-[11px] font-medium rounded text-neutral-300 hover:text-white hover:bg-neutral-800 transition-colors"
           >
-            우상단 (70%)
+            EVERLAND 글자
           </button>
           <button
-            onClick={() => setQuickFocus(0.5, 0.7)}
+            onClick={() => setQuickFocus(0.5, 0.82)}
             className="px-2.5 py-1 text-[11px] font-medium rounded text-neutral-300 hover:text-white hover:bg-neutral-800 transition-colors"
           >
-            하단 (70%)
+            댑싸리 정원 (하단)
           </button>
         </div>
       </div>

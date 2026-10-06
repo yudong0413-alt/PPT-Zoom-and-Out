@@ -127,7 +127,7 @@ export const ImageDropzone: React.FC<ImageDropzoneProps> = ({
           <span className="text-[11px] text-neutral-500 font-mono">1클릭 로드</span>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
           {SAMPLE_PRESETS.map((preset) => (
             <button
               key={preset.id}

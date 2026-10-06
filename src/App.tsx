@@ -35,23 +35,23 @@ export default function App() {
   const [imageSrc, setImageSrc] = useState<string>('');
   const [imageNaturalWidth, setImageNaturalWidth] = useState<number>(1920);
   const [imageNaturalHeight, setImageNaturalHeight] = useState<number>(1080);
-  const [imageName, setImageName] = useState<string>('천문대와 비밀의 신호 (샘플)');
+  const [imageName, setImageName] = useState<string>('에버랜드 포시즌스 가든 (샘플)');
 
-  // Focal point (0..1 normalized coordinates)
+  // Focal point (0..1 normalized coordinates) - defaults to the fairytale Tower Tree
   const [focalPoint, setFocalPoint] = useState<{ x: number; y: number }>({
-    x: 450 / 1920,
-    y: 580 / 1080,
+    x: 0.50,
+    y: 0.28,
   });
 
   // Settings
   const [slideCount, setSlideCount] = useState<number>(4);
-  const [initialZoom, setInitialZoom] = useState<number>(5.0);
+  const [initialZoom, setInitialZoom] = useState<number>(5.5);
   const [easing, setEasing] = useState<EasingType>('easeOut');
   const [direction, setDirection] = useState<ZoomDirection>('zoomOut');
   const [includeTitles, setIncludeTitles] = useState<boolean>(false);
   const [includeStepBadges, setIncludeStepBadges] = useState<boolean>(false);
   const [backgroundColor, setBackgroundColor] = useState<string>('#000000');
-  const [fileName, setFileName] = useState<string>('zoomout_presentation');
+  const [fileName, setFileName] = useState<string>('everland_zoomout_presentation');
 
   // Slide Steps & Previews
   const [slideSteps, setSlideSteps] = useState<SlideStepData[]>([]);
